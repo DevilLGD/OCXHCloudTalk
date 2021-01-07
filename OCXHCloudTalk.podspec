@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #s.framework = 'ImageIO'
   
   s.default_subspec = 'Core'
+  s.default_subspec = 'Private'
 
   s.pod_target_xcconfig = {
     'SUPPORTS_MACCATALYST' => 'YES',
@@ -32,8 +33,12 @@ Pod::Spec.new do |s|
   }
 
   s.subspec 'Core' do |core|
-    core.source_files = 'OCXHCloudTalk/Core/*.{h,m}', 'OCXHCloudTalk/CloudTalk.h', 'OCXHCloudTalk/Private/*.{h,m}'
-    core.private_header_files = 'OCXHCloudTalk/Private/*.h'
+    core.source_files = 'OCXHCloudTalk/Core/*.{h,m,swift}', 'OCXHCloudTalk/CloudTalk.h',
+  end
+
+  s.subspec 'Private' do |private|
+    private.source_files = 'OCXHCloudTalk/Private/*.{h,m,swift}'
+    private.private_header_files = 'OCXHCloudTalk/Private/*.h'
   end
 
 
