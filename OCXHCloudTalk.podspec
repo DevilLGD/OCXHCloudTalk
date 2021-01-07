@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'OCXHCloudTalk'
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.license = 'MIT'
   s.summary = 'Cloud Talk on iOS'
   s.homepage = 'https://github.com/DevilLGD/OCXHCloudTalk'
@@ -22,9 +22,11 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   s.default_subspec = 'Private'
 
+  s.source_files = 'OCXHCloudTalk/CloudTalk.h'
 
   s.subspec 'Core' do |core|
-    core.source_files = 'OCXHCloudTalk/Core/*.{h,m,swift}', 'OCXHCloudTalk/CloudTalk.h'
+    core.source_files = 'OCXHCloudTalk/Core/*.{h,m,swift}'
+    core.private_header_files = 'OCXHCloudTalk/Core/*.h'
   end
 
   s.subspec 'Private' do |private|
