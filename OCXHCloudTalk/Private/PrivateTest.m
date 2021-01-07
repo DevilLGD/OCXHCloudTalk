@@ -9,4 +9,8 @@
 
 @implementation PrivateTest
 
+- (void)show {
+    
+}
+
 @end

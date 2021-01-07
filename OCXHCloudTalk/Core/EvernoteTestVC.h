@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface EvernoteTestVC : NSObject
 
+- (void)show;
+
 @end
 
 NS_ASSUME_NONNULL_END

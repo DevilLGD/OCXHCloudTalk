@@ -7,6 +7,22 @@
 
 import UIKit
 
-class PrivateTestSwiftVC: NSObject {
+open class PrivateTestSwiftVC: NSObject {
+    
+    open func show1() {
+        
+    }
+    
+    func show2() {
+        
+    }
+    
+    @objc open func show3() {
+        
+    }
+    
+    @objc func show4() {
+        
+    }
 
 }

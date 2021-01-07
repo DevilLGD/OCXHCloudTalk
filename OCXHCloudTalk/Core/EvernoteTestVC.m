@@ -9,4 +9,8 @@
 
 @implementation EvernoteTestVC
 
+- (void)show {
+    
+}
+
 @end
